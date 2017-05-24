@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Space_Invaders_Gsm;
 
 namespace Space_Invaders
 {
@@ -12,10 +13,29 @@ namespace Space_Invaders
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        ScreenManager screenManager;
+
+        // By preloading any assets used by UI rendering, we avoid framerate glitches
+        // when they suddenly need to be loaded in the middle of a menu transition.
+        static readonly string[] preloadAssets =
+        {
+            "gradient",
+        };
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 600;
+
+            screenManager = new ScreenManager(this);
+
+            Components.Add(screenManager);
+
+            screenManager.AddScreen(new BackgroundScreen(), null);
+            screenManager.AddScreen(new MainMenuScreen(), null);
         }
 
         /// <summary>
@@ -41,6 +61,10 @@ namespace Space_Invaders
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            foreach (string asset in preloadAssets)
+            {
+                Content.Load<object>(asset);
+            }
         }
 
         /// <summary>

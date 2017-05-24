@@ -41,9 +41,39 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Contens\Fonts.cs" />
+    <Compile Include="Contens\Sounds.cs" />
+    <Compile Include="Contens\Textures.cs" />
+    <Compile Include="Entity\Animation.cs" />
+    <Compile Include="Entity\Collission.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\Invader.cs" />
+    <Compile Include="Entity\InvaderList.cs" />
+    <Compile Include="Entity\NormalTexture.cs" />
+    <Compile Include="Entity\Player.cs" />
+    <Compile Include="Entity\Shoot.cs" />
+    <Compile Include="Entity\SpaceShip.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="ItemManager\Item.cs" />
+    <Compile Include="ItemManager\ItemManager.cs" />
+    <Compile Include="Other\HUD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\InputState.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="Screens\BackgroundScreen.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
+    <Compile Include="Screens\GameplayScreen.cs" />
+    <Compile Include="Screens\HighScoreScreen.cs" />
+    <Compile Include="Screens\LoadingScreen.cs" />
+    <Compile Include="Screens\MainMenuScreen.cs" />
+    <Compile Include="Screens\MenuEntry.cs" />
+    <Compile Include="Screens\MenuScreen.cs" />
+    <Compile Include="Screens\MessageBoxScreen.cs" />
+    <Compile Include="Screens\OptionsMenuScreen.cs" />
+    <Compile Include="Screens\PauseMenuScreen.cs" />
+    <Compile Include="Screens\PlayerIndexEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
