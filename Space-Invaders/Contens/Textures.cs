@@ -37,28 +37,28 @@ namespace Space_Invaders
         //In Basic.LoadContent aufrufen
         public static void Setup(ContentManager content)
         {
-            blueship = content.Load<Texture2D>(@"Textures\ship\ship");
-            redship = content.Load<Texture2D>(@"Textures\ship\redShip");
-            redshoot = content.Load<Texture2D>(@"Textures\ship\shoot");
-            blueshoot = content.Load<Texture2D>(@"Textures\ship\blueshoot");
+            blueship = content.Load<Texture2D>(@"textures\ship\ship");
+            redship = content.Load<Texture2D>(@"textures\ship\redShip");
+            redshoot = content.Load<Texture2D>(@"textures\ship\shoot");
+            blueshoot = content.Load<Texture2D>(@"textures\ship\blueshoot");
 
-            Invader_Blue = content.Load<Texture2D>(@"Textures\Invaders\invader01_1");
-            Invader_Blue_02 = content.Load<Texture2D>(@"Textures\Invaders\invader01_2");
-            Invader_explode = content.Load<Texture2D>(@"Textures\Invaders\explosion");
+            Invader_Blue = content.Load<Texture2D>(@"textures\Invaders\invader01_1");
+            Invader_Blue_02 = content.Load<Texture2D>(@"textures\Invaders\invader01_2");
+            Invader_explode = content.Load<Texture2D>(@"textures\Invaders\explosion");
 
-            Lives = content.Load<Texture2D>(@"Textures\Lives");
+            Lives = content.Load<Texture2D>(@"textures\Lives");
 
             //Items
 
-            banana = content.Load<Texture2D>(@"Textures\Items\banana");
-            blackout = content.Load<Texture2D>(@"Textures\Items\blackout");
-            faster = content.Load<Texture2D>(@"Textures\Items\faster");
-            freeze = content.Load<Texture2D>(@"Textures\Items\freeze");
-            invasion = content.Load<Texture2D>(@"Textures\Items\invasion");
-            noitem = content.Load<Texture2D>(@"Textures\Items\noitem");
-            shield = content.Load<Texture2D>(@"Textures\Items\shield");
-            speedup = content.Load<Texture2D>(@"Textures\Items\speedup");
-            triplespeed = content.Load<Texture2D>(@"Textures\Items\triplespeed");
+            banana = content.Load<Texture2D>(@"textures\Items\banana");
+            blackout = content.Load<Texture2D>(@"textures\Items\blackout");
+            faster = content.Load<Texture2D>(@"textures\Items\faster");
+            freeze = content.Load<Texture2D>(@"textures\Items\freeze");
+            invasion = content.Load<Texture2D>(@"textures\Items\invasion");
+            noitem = content.Load<Texture2D>(@"textures\Items\noitem");
+            shield = content.Load<Texture2D>(@"textures\Items\shield");
+            speedup = content.Load<Texture2D>(@"textures\Items\speedup");
+            triplespeed = content.Load<Texture2D>(@"textures\Items\triplespeed");
         }
     }
 }
